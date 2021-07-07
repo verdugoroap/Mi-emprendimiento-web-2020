@@ -1,0 +1,31 @@
+//Fonts
+
+$ubuntu: 'Ubuntu',
+sans-serif;
+$ubuntu-regular: 400;
+$ubuntu-bold: 700;
+$poppins: 'Poppins',
+sans-serif;
+$poppins-regular: 400;
+$poppins-bold: 700;
+
+//Orden fuentes
+
+$primary-font: $ubuntu;
+$primary-font-regular: $ubuntu-regular;
+$primary-font-bold: $ubuntu-bold;
+$secondary-font: $poppins;
+$secondary-font-regular: $poppins-regular;
+$secondary-font-bold: $poppins-bold;
+
+//Font size
+
+$font-xxxxx-large: 3.125rem;
+$font-xxxx-large: 2.8125rem;
+$font-xxx-large: 2.5rem;
+$font-xx-large: 2.1875rem;
+$font-x-large: 1.875rem;
+$font-large: 1.25rem;
+$font-medium: 1rem;
+$font-small: 0.875rem;
+$font-x-small: 0.75rem;
