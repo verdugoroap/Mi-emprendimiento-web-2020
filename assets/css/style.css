@@ -12,4 +12,86 @@ sass --watch assets/scss/main.scss:assets/css/style.css
   box-sizing: border-box;
 }
 
+.button {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+.button--grande {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.4rem 1.5rem;
+  margin: 0 10px;
+  color: #FFF;
+  background-color: #726F73;
+  height: 25px;
+  width: 98%;
+  padding: 2px;
+  margin: 0 auto;
+}
+.button--chico {
+  padding: 4px 10px;
+  background-color: #FFAF6D;
+  text-decoration: none;
+  list-style: none;
+  font-size: 0.75rem;
+  border-radius: 3px;
+}
+
+.navbar {
+  background-color: #000;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  width: 100%;
+}
+.navbar__logo img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+.navbar__container {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.navbar__list {
+  display: none;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.navbar__item {
+  color: #FFF;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  list-style: none;
+  margin: 10px;
+}
+.navbar__menu {
+  font-size: 1.875rem;
+  color: #FFF;
+}
+
+@media (min-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__list {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__list {
+    display: flex;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
