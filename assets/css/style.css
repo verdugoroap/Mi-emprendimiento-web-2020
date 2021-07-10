@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Para compilar el manifiesto desde la raiz de tu proyecto, abre el terminal 
 verifica que este en la raiz de tu proyecto con el comando 'ls' deberias ver
@@ -94,50 +93,50 @@ sass --watch assets/scss/main.scss:assets/css/style.css
     display: flex;
   }
 }
-.main .cursos {
+.main .classes {
   width: 98%;
   margin: 0 auto;
   border: 0.0625rem solid #000;
   padding: 0.1875rem;
 }
-.main .cursos__articulo {
+.main .classes__article {
   border: 0.0313rem dotted lightslategray;
   margin: 1.25rem 0.9375rem;
   padding: 0.3125rem;
 }
-.main .cursos__img img {
+.main .classes__img img {
   width: 100%;
   padding: 0.3125rem;
 }
-.main .cursos__titulo {
+.main .classes__tittle {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   padding: 0.3125rem;
 }
-.main .cursos__parrafo {
+.main .classes__paragraph {
   font-family: "Ubuntu", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 2;
   padding: 0.3125rem;
 }
-.main .cursos__instructor {
+.main .classes__instructor {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   padding: 0.3125rem;
 }
-.main .cursos__lista {
+.main .classes__list {
   padding: 0.3125rem;
 }
-.main .cursos__item {
+.main .classes__item {
   display: inline-block;
   margin: 0.1875rem;
 }
-.main .cursos__item:first-child {
+.main .classes__item:first-child {
   margin: 0;
 }
-.main .cursos__item i {
+.main .classes__item i {
   margin: 0.25rem;
 }
 .main .nosotros {
@@ -161,7 +160,7 @@ sass --watch assets/scss/main.scss:assets/css/style.css
   border: 1px solid black;
   border-radius: 50%;
 }
-.main .nosotros__titulo {
+.main .nosotros__tittle {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 1rem;
@@ -173,14 +172,14 @@ sass --watch assets/scss/main.scss:assets/css/style.css
   justify-content: center;
   margin: 0.625rem;
 }
-.main .nosotros__icono {
+.main .nosotros__icon {
   display: inline-block;
 }
-.main .nosotros__icono i {
+.main .nosotros__icon i {
   font-size: 1.25rem !important;
   margin: 0 8px;
 }
-.main .nosotros__parrafo {
+.main .nosotros__paragraph {
   font-family: "Ubuntu", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
@@ -222,7 +221,6 @@ sass --watch assets/scss/main.scss:assets/css/style.css
   transform-origin: 80% 80%;
 }
 
-/*tamaño celular*/
 @media (min-width: 768px) {
   .main {
     display: flex;
@@ -234,6 +232,67 @@ sass --watch assets/scss/main.scss:assets/css/style.css
   .main .nosotros {
     width: 50%;
     margin: 0.125rem 0.375rem;
+  }
+}
+.footer {
+  background-color: #000;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 20px;
+}
+.footer__item {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  margin: 20px;
+  list-style: none;
+}
+.footer__item a {
+  text-decoration: none;
+  list-style: none;
+  color: #FFF;
+}
+.footer__item button {
+  text-decoration: none;
+  list-style: none;
+}
+.footer__item:nth-child(4) {
+  margin: 0;
+}
+.footer__input {
+  border-radius: 3px;
+  padding: 5px;
+  border: none;
+  margin: 0;
+}
+.footer__copy {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #FFF;
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 20px;
+  }
+  .footer__lista {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: space-between;
+  }
+  .footer__item {
+    margin: 0 20px;
+    list-style: none;
   }
 }
 

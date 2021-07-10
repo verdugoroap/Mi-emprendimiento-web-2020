@@ -1,11 +1,11 @@
 
 .main {
-    .cursos {
+    .classes {
         width: 98%;
         margin: 0 auto;
         border: 0.0625rem solid $black;
         padding: 0.1875rem;
-        &__articulo {
+        &__article {
             border: 0.0313rem dotted lightslategray;
             margin: 1.25rem 0.9375rem;
             padding: 0.3125rem;
@@ -16,12 +16,12 @@
                 padding: 0.3125rem;
             }
         }
-        &__titulo {
+        &__tittle {
             font-family: $primary-font;
             font-size: $font-medium;
             padding: 0.3125rem;
         }
-        &__parrafo {
+        &__paragraph {
             font-family: $primary-font;
             font-size: $font-small;
             font-weight: $primary-font-regular;
@@ -34,7 +34,7 @@
             font-weight: $primary-font-bold;
             padding: 0.3125rem;
         }
-        &__lista {
+        &__list {
             padding: 0.3125rem;
         }
         &__item {
@@ -68,7 +68,7 @@
                 border-radius: 50%;
             }
         }
-        &__titulo {
+        &__tittle {
             font-family: $primary-font;
             font-weight: $primary-font-bold;
             font-size: $font-medium;
@@ -80,14 +80,14 @@
             justify-content: center;
             margin: 0.625rem
         }
-        &__icono {
+        &__icon {
             display: inline-block;
         }
-        &__icono i {
+        &__icon i {
             font-size: $font-large!important;
             margin: 0 8px;
         }
-        &__parrafo {
+        &__paragraph {
             font-family: $primary-font;
             font-size: $font-small;
             font-weight: $primary-font-regular;
@@ -113,7 +113,6 @@
         }
         &__svg {
             text-align: center;
-            // padding-bottom: 50px;
         }
         &__path1 {
             animation-name: lineal;
@@ -133,7 +132,7 @@
 }
 
 
-/*tamaño celular*/
+//Mobile size//
 
 @include respond-to($bp-sm) {
     .main {
