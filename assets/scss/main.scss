@@ -16,12 +16,14 @@ sass --watch assets/scss/main.scss:assets/css/style.css
 //base
 @import "base/typography";
 @import "base/reset";
+@import "base/animation";
 
 
 //components
 @import "components/button";
 
 //layout
+@import "layout/grid";
 @import "layout/navbar";
 @import "layout/home";
 @import "layout/_footer";

@@ -12,6 +12,22 @@ sass --watch assets/scss/main.scss:assets/css/style.css
   box-sizing: border-box;
 }
 
+@keyframes lineal {
+  0% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rueda {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .button {
   font-family: "Poppins", sans-serif;
   border: none;
