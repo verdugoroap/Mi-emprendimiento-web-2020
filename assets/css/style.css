@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Para compilar el manifiesto desde la raiz de tu proyecto, abre el terminal 
 verifica que este en la raiz de tu proyecto con el comando 'ls' deberias ver
@@ -91,6 +92,148 @@ sass --watch assets/scss/main.scss:assets/css/style.css
   }
   .navbar__list {
     display: flex;
+  }
+}
+.main .cursos {
+  width: 98%;
+  margin: 0 auto;
+  border: 0.0625rem solid #000;
+  padding: 0.1875rem;
+}
+.main .cursos__articulo {
+  border: 0.0313rem dotted lightslategray;
+  margin: 1.25rem 0.9375rem;
+  padding: 0.3125rem;
+}
+.main .cursos__img img {
+  width: 100%;
+  padding: 0.3125rem;
+}
+.main .cursos__titulo {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  padding: 0.3125rem;
+}
+.main .cursos__parrafo {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 2;
+  padding: 0.3125rem;
+}
+.main .cursos__instructor {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.3125rem;
+}
+.main .cursos__lista {
+  padding: 0.3125rem;
+}
+.main .cursos__item {
+  display: inline-block;
+  margin: 0.1875rem;
+}
+.main .cursos__item:first-child {
+  margin: 0;
+}
+.main .cursos__item i {
+  margin: 0.25rem;
+}
+.main .nosotros {
+  width: 98%;
+  border: 0.0625rem solid #000;
+  margin: 0 auto;
+  padding: 0.1875rem;
+}
+.main .nosotros__img {
+  padding: 1.25rem 0;
+}
+.main .nosotros__img img {
+  display: block;
+  margin: 0 auto;
+  background-image: url("../img/web-development.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  width: 11.25rem;
+  height: 11.25rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.main .nosotros__titulo {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main .nosotros__redes {
+  display: flex;
+  justify-content: center;
+  margin: 0.625rem;
+}
+.main .nosotros__icono {
+  display: inline-block;
+}
+.main .nosotros__icono i {
+  font-size: 1.25rem !important;
+  margin: 0 8px;
+}
+.main .nosotros__parrafo {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 2;
+  padding: 10px;
+}
+.main .nosotros__boton {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main .nosotros__listado {
+  display: flex;
+  flex-direction: column;
+}
+.main .nosotros__cursos {
+  font-family: "Ubuntu", sans-serif;
+  list-style: circle;
+  margin: 3px 0 3px 30px;
+}
+.main .nosotros__cursos a {
+  text-decoration: none;
+}
+.main .nosotros__svg {
+  text-align: center;
+}
+.main .nosotros__path1 {
+  animation-name: lineal;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.main .nosotros__path2 {
+  animation-name: rueda;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 80% 80%;
+}
+
+/*tamaño celular*/
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+  }
+  .main .cursos {
+    width: 50%;
+    margin: 0.125rem 0.375rem;
+  }
+  .main .nosotros {
+    width: 50%;
+    margin: 0.125rem 0.375rem;
   }
 }
 
